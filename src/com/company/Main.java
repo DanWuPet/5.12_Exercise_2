@@ -11,7 +11,7 @@ public class Main {
         int x = 0;
         int guess;
         Random rnd = new Random();
-        int number = rnd.nextInt(100) + 1;
+        int number = rnd.nextInt(2) + 1;
 
         System.out.println("I'm thinking of a number between 1 and 100\n(Including both)." +
                 " Can you guess what it is? \nYou have 3 tries.");
@@ -28,6 +28,7 @@ public class Main {
             } else{
                 System.out.println("You guessed the number!");
                 x = 3;
+                break;
             }
             x = x+1;
             System.out.println((3 - x) + " tries left!");
